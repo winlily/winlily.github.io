@@ -116,7 +116,7 @@
 <meta name="keywords" content="Hexo,Github Pages">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+Github Pages 搭建个人博客">
-<meta property="og:url" content="https://winlily.github.io/2017/08/22/Hexo-Github-Pages-搭建个人博客/index.html">
+<meta property="og:url" content="https://winlily.github.io/2016/12/04/Hexo-Github-Pages-搭建个人博客/index.html">
 <meta property="og:site_name" content="winlily的小站">
 <meta property="og:description" content="Hexo 是一个快速、简洁且高效的博客框架。– Hexo官网">
 <meta property="og:locale" content="zh-Hans">
@@ -125,7 +125,7 @@
 <meta property="og:image" content="http://p1.bpimg.com/567571/a6fcebf2256f5f0c.png">
 <meta property="og:image" content="http://p1.bpimg.com/567571/2908b921387dd8ed.png">
 <meta property="og:image" content="http://p1.bpimg.com/567571/a5fc64d9f73a0130.png">
-<meta property="og:updated_time" content="2017-08-22T11:06:57.482Z">
+<meta property="og:updated_time" content="2017-08-22T11:53:33.339Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+Github Pages 搭建个人博客">
 <meta name="twitter:description" content="Hexo 是一个快速、简洁且高效的博客框架。– Hexo官网">
@@ -158,7 +158,7 @@
 
 
 
-  <link rel="canonical" href="https://winlily.github.io/2017/08/22/Hexo-Github-Pages-搭建个人博客/"/>
+  <link rel="canonical" href="https://winlily.github.io/2016/12/04/Hexo-Github-Pages-搭建个人博客/"/>
 
 
 
@@ -291,7 +291,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://winlily.github.io/2017/08/22/Hexo-Github-Pages-搭建个人博客/">
+    <link itemprop="mainEntityOfPage" href="https://winlily.github.io/2016/12/04/Hexo-Github-Pages-搭建个人博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="winlily">
@@ -320,8 +320,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-22T11:47:25+08:00">
-                2017-08-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-04T11:47:25+08:00">
+                2016-12-04
               </time>
             
 
@@ -361,15 +361,15 @@
         <p>Hexo 是一个快速、简洁且高效的博客框架。– <strong><a href="https://hexo.io/zh-cn/" title="hexo" target="_blank" rel="external">Hexo官网</a></strong></p>
 <a id="more"></a>
 <p>学习Hexo之前，可以先了解一些常用的命令 <strong><a href="https://hexo.io/zh-tw/docs/commands.html" title="命令" target="_blank" rel="external">点击查看</a></strong></p>
-<h2 id="1-系统环境配置"><a href="#1-系统环境配置" class="headerlink" title="1.系统环境配置"></a>1.系统环境配置</h2><p>下载安装 Node.js 和 git</p>
+<h2 id="系统环境配置"><a href="#系统环境配置" class="headerlink" title="系统环境配置"></a>系统环境配置</h2><p>下载安装 Node.js 和 git</p>
 <p><strong><a href="https://git-for-windows.github.io/" target="_blank" rel="external">git</a></strong></p>
 <p><strong><a href="https://nodejs.org/en/" title="node.js" target="_blank" rel="external">node.js</a></strong></p>
 <p>git 教程个人推荐 <strong><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="git" target="_blank" rel="external">廖雪峰</a></strong> 的教程</p>
-<h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2.安装Hexo"></a>2.安装Hexo</h2><p>打开 git bash 面板，安装 Hexo：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install –g hexo-cli</div></pre></td></tr></table></figure></p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>打开 git bash 面板，安装 Hexo：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install –g hexo-cli</div></pre></td></tr></table></figure></p>
 <p>Windows系统下安装完成后会显示一些 <strong>warning</strong> ，可以忽略不管。</p>
 <p>查看本地Hexo版本（最好安装3.0以上版本）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo version</div></pre></td></tr></table></figure></p>
 <p>如果显示出Hexo版本说明Hexo安装成功。</p>
-<h2 id="3-搭建本地博客"><a href="#3-搭建本地博客" class="headerlink" title="3.搭建本地博客"></a>3.搭建本地博客</h2><p>在本地新建一个文件夹 blog (文件命名随意)，在blog文件夹下右键打开 git bash 面板，输入以下命令自动安装相应的文件：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
+<h2 id="搭建本地博客"><a href="#搭建本地博客" class="headerlink" title="搭建本地博客"></a>搭建本地博客</h2><p>在本地新建一个文件夹 blog (文件命名随意)，在blog文件夹下右键打开 git bash 面板，输入以下命令自动安装相应的文件：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
 <p>等待安装完成后，blog文件夹下会生成如下图所示的文件：</p>
 <p><img src="http://p1.bqimg.com/567571/c88fa7ba595486d1.png" alt=""></p>
 <p>目录简介：</p>
@@ -383,7 +383,7 @@
 <p>输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 查看效果</p>
 <p>ctrl+c 停止服务</p>
 <p>到此为止，本地博客已经搭建完成。</p>
-<h2 id="4-将本地博客部署到Github-Pages"><a href="#4-将本地博客部署到Github-Pages" class="headerlink" title="4.将本地博客部署到Github Pages"></a>4.将本地博客部署到Github Pages</h2><p>在使用之前需要先了解下什么是 <strong><a href="https://zh.wikipedia.org/wiki/GitHub" target="_blank" rel="external">Github</a></strong> 和 <strong><a href="https://pages.github.com/" target="_blank" rel="external">Github Pages</a></strong>。Github 被称为全球最大的社交编程及代码托管平台，上面有大量的开源代码，广为开发者喜爱。Github Pages 是Github 公司提供的免费的静态网站托管服务，并且用户可以绑定自己独立的域名。没有Github账号的用户需要去 <strong><a href="https://github.com/" target="_blank" rel="external">官网</a></strong>注册（这里不详细介绍）。</p>
+<h2 id="将本地博客部署到Github-Pages"><a href="#将本地博客部署到Github-Pages" class="headerlink" title="将本地博客部署到Github Pages"></a>将本地博客部署到Github Pages</h2><p>在使用之前需要先了解下什么是 <strong><a href="https://zh.wikipedia.org/wiki/GitHub" target="_blank" rel="external">Github</a></strong> 和 <strong><a href="https://pages.github.com/" target="_blank" rel="external">Github Pages</a></strong>。Github 被称为全球最大的社交编程及代码托管平台，上面有大量的开源代码，广为开发者喜爱。Github Pages 是Github 公司提供的免费的静态网站托管服务，并且用户可以绑定自己独立的域名。没有Github账号的用户需要去 <strong><a href="https://github.com/" target="_blank" rel="external">官网</a></strong>注册（这里不详细介绍）。</p>
 <p><strong>注意：</strong> 新用户需要在 settings 配置SSH keys(这里不详细介绍)。</p>
 <p>进入 github 主页，选择 new repository，进入到 <strong><a href="https://github.com/new" target="_blank" rel="external">新建仓库</a></strong> 的界面。新建一个 USERNAME.github.io 的仓库，这里 USERNAME 是 Github 的用户名，且只能是 Github 的用户名。Github Pages搭建博客已经完成，下面把本地的 Hexo 博客托管到Github上。</p>
 <p>打开blog文件夹下的 _config.yml 文件（建议用Nodepad++或者记事本打开），找到文件最下面的deploy:进行配置修改。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line"><span class="built_in">type</span>: git</div><div class="line">repository: git@github.com:winlily/winlily.github.io.git</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
@@ -398,7 +398,7 @@
 <p>到此配置已经完成，现在需要用命令部署到Github，部署到 Github 前需要在本地生成<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure></p>
 <p>部署到 Github<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>
 <p>现在访问 <strong><a href="USERNAME.github.io">USERNAME.github.io</a></strong> 即可预览自己的博客。</p>
-<h2 id="5-Github-Pages-绑定自己独立的域名"><a href="#5-Github-Pages-绑定自己独立的域名" class="headerlink" title="5.Github Pages 绑定自己独立的域名"></a>5.Github Pages 绑定自己独立的域名</h2><p>当然，这一步的前提是要有个个人独立域名。作为一枚学生党的我首先还是考虑了下价格[haha] ,这一点<strong><a href="https://www.aliyun.com" target="_blank" rel="external">阿里云</a></strong>和 <strong><a href="https://www.qcloud.com/" target="_blank" rel="external">腾讯云</a></strong>针对学生党都有些优惠，相比之下我个人选择的是后者。</p>
+<h2 id="Github-Pages-绑定自己独立的域名"><a href="#Github-Pages-绑定自己独立的域名" class="headerlink" title="Github Pages 绑定自己独立的域名"></a>Github Pages 绑定自己独立的域名</h2><p>当然，这一步的前提是要有个个人独立域名。作为一枚学生党的我首先还是考虑了下价格[haha] ,这一点<strong><a href="https://www.aliyun.com" target="_blank" rel="external">阿里云</a></strong>和 <strong><a href="https://www.qcloud.com/" target="_blank" rel="external">腾讯云</a></strong>针对学生党都有些优惠，相比之下我个人选择的是后者。</p>
 <p>有了域名，现在我们要把它用起来。</p>
 <ul>
 <li>首先，进入到域名管理界面，进行域名解析；</li>
@@ -450,8 +450,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/14/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2016/12/02/侧耳倾听/" rel="next" title="你有千言万语，我愿侧耳倾听">
+                <i class="fa fa-chevron-left"></i> 你有千言万语，我愿侧耳倾听
               </a>
             
           </div>
@@ -459,6 +459,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/09/sublime-text3/" rel="prev" title="前端神器 Sublime Text3 安装及使用">
+                前端神器 Sublime Text3 安装及使用 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -583,7 +587,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-系统环境配置"><span class="nav-number">1.</span> <span class="nav-text">1.系统环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装Hexo"><span class="nav-number">2.</span> <span class="nav-text">2.安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-搭建本地博客"><span class="nav-number">3.</span> <span class="nav-text">3.搭建本地博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-将本地博客部署到Github-Pages"><span class="nav-number">4.</span> <span class="nav-text">4.将本地博客部署到Github Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Github-Pages-绑定自己独立的域名"><span class="nav-number">5.</span> <span class="nav-text">5.Github Pages 绑定自己独立的域名</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#系统环境配置"><span class="nav-number">1.</span> <span class="nav-text">系统环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Hexo"><span class="nav-number">2.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建本地博客"><span class="nav-number">3.</span> <span class="nav-text">搭建本地博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#将本地博客部署到Github-Pages"><span class="nav-number">4.</span> <span class="nav-text">将本地博客部署到Github Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github-Pages-绑定自己独立的域名"><span class="nav-number">5.</span> <span class="nav-text">Github Pages 绑定自己独立的域名</span></a></li></ol></div>
             
 
           </div>

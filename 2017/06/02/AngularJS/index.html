@@ -96,7 +96,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo,Github Pages," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -113,16 +113,15 @@
 
 
 <meta name="description" content="Angular 是一个开发平台。它能帮你更轻松的构建 Web 应用。Angular 集声明式模板、依赖注入、端到端工具和一些最佳实践于一身，为你解决开发方面的各种挑战。Angular 为开发者提升构建 Web、手机或桌面应用的能力。– angular官网">
-<meta name="keywords" content="Hexo,Github Pages">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo+Github Pages 搭建个人博客22">
-<meta property="og:url" content="https://winlily.github.io/2016/12/04/AngularJS/index.html">
+<meta property="og:title" content="AngularJS 初识">
+<meta property="og:url" content="https://winlily.github.io/2017/06/02/AngularJS/index.html">
 <meta property="og:site_name" content="winlily的小站">
 <meta property="og:description" content="Angular 是一个开发平台。它能帮你更轻松的构建 Web 应用。Angular 集声明式模板、依赖注入、端到端工具和一些最佳实践于一身，为你解决开发方面的各种挑战。Angular 为开发者提升构建 Web、手机或桌面应用的能力。– angular官网">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-22T11:24:11.769Z">
+<meta property="og:updated_time" content="2017-08-22T11:54:23.784Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo+Github Pages 搭建个人博客22">
+<meta name="twitter:title" content="AngularJS 初识">
 <meta name="twitter:description" content="Angular 是一个开发平台。它能帮你更轻松的构建 Web 应用。Angular 集声明式模板、依赖注入、端到端工具和一些最佳实践于一身，为你解决开发方面的各种挑战。Angular 为开发者提升构建 Web、手机或桌面应用的能力。– angular官网">
 
 
@@ -152,13 +151,13 @@
 
 
 
-  <link rel="canonical" href="https://winlily.github.io/2016/12/04/AngularJS/"/>
+  <link rel="canonical" href="https://winlily.github.io/2017/06/02/AngularJS/"/>
 
 
 
 
 
-  <title>Hexo+Github Pages 搭建个人博客22 | winlily的小站</title>
+  <title>AngularJS 初识 | winlily的小站</title>
   
 
 
@@ -285,7 +284,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://winlily.github.io/2016/12/04/AngularJS/">
+    <link itemprop="mainEntityOfPage" href="https://winlily.github.io/2017/06/02/AngularJS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="winlily">
@@ -302,7 +301,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo+Github Pages 搭建个人博客22</h1>
+          <h1 class="post-title" itemprop="name headline">AngularJS 初识</h1>
         
 
         <div class="post-meta">
@@ -314,8 +313,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-04T11:47:25+08:00">
-                2016-12-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-02T11:47:25+08:00">
+                2017-06-02
               </time>
             
 
@@ -357,7 +356,27 @@
 <h1 id="AngularJS有五个主要核心特性"><a href="#AngularJS有五个主要核心特性" class="headerlink" title="AngularJS有五个主要核心特性"></a>AngularJS有五个主要核心特性</h1><h2 id="双向数据绑定"><a href="#双向数据绑定" class="headerlink" title="双向数据绑定"></a><strong>双向数据绑定</strong></h2><p>实现了把model与view完全绑定在一起，model变化，view也变化，反之亦然。</p>
 <h2 id="模板"><a href="#模板" class="headerlink" title="模板"></a><strong>模板</strong></h2><p>在AngularJS中，模板相当于HTML文件被浏览器解析到DOM中，AngularJS遍历这些DOM，也就是说AuguarJS把模板当做DOM来操作，去生成一些指令来完成对view的数据绑定。</p>
 <h2 id="MVVM"><a href="#MVVM" class="headerlink" title="MVVM"></a><strong>MVVM</strong></h2><p>吸收了传统的MVC设计模式针但又并不执行传统意义上的MVC，更接近于MVVM(Moodel-View-ViewModel)。</p>
+<ol>
+<li><p>View：它专注于界面的显示和渲染，在angular中则是包含一堆声明式Directive的视图模板。</p>
+</li>
+<li><p>ViewModel：它是View和Model的粘合体，负责View和Model的交互和协作，它负责给View提供显示的数据，以及提供了View中Command事件操作Model的途径；在angular中$scope对象充当了这个ViewModel的角色；</p>
+</li>
+<li><p>Model：它是与应用程序的业务逻辑相关的数据的封装载体，它是业务领域的对象，Model并不关心会被如何显示或操作，所以模型也不会包含任何界面显示相关的逻辑。在web页面中，大部分Model都是来自Ajax的服务端返回数据或者是全局的配置对象；而angular中的service则是封装和处理这些与Model相关的业务逻辑的场所，这类的业务服务是可以被多个Controller或者其他service复用的领域服务。</p>
+</li>
+<li><p>Controller：这并不是MVVM模式的核心元素，但它负责ViewModel对象的初始化，它将组合一个或者多个service来获取业务领域Model放在ViewModel对象上，使得应用界面在启动加载的时候达到一种可用的状态。</p>
+</li>
+</ol>
+<p>View不能直接与Model交互，而是通过$scope这个ViewModel来实现与Model的交互。对于界面表单的交互，通过ngModel指令来实现View和ViewModel的同步。ngModelController包含$parsers和$formatters两个转换器管道，它们分别实现View表单输入值到Model数据类型转换和Model数据到View表单数据的格式化。对于用户界面的交互Command事件（如ngClick、ngChange等）则会转发到ViewModel对象上，通过ViewModel来实现对于Model的改变。然而对于Model的任何改变，也会反应在ViewModel之上，并且会通过$scope的“脏检查机制”（$digest）来更新到View。从而实现View和Model的分离，达到对前端逻辑MVVM的分层架构。</p>
 <h2 id="依赖注入"><a href="#依赖注入" class="headerlink" title="依赖注入"></a><strong>依赖注入</strong></h2><p>AngularJS拥有内建的依赖注入子系统，可以帮助开发人员更容易的开发，理解和测试应用。</p>
+<p>在回调函数中，AngularJs会提供对应参数的对象服务，用什么功能就传什么参数。</p>
+<p>$scope控制器的作用域，是一个对象可以在内部绑定任意属性</p>
+<p>$scope.$watch（“表达式”，function(newvalue,oldvalue,scope){}） 是$scope上自带的一个方法，用来监听表达式值的变化</p>
+<p>$http是angularJs对ajax的封装</p>
+<p>$parse作用：将一个AngularJS表达式转换成一个函数</p>
+<p>$rootScope可以访问控制器的根（父级）作用域</p>
+<p>$timeout是AngularJs对原生timeout的封装</p>
+<p>$location是AngularJs对window原生location的封装</p>
+<p>$location. path()是$location对象的一个属性，可以获取路由路径</p>
 <h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a><strong>指令</strong></h2><p>可以用来创建自定义的标签，也可以用来装饰元素或者操作DOM属性。</p>
 <ol>
 <li><p>ng-app指令标记了AngularJS脚本的作用域，在中添加ng-app属性即说明整个都是AngularJS脚本作用域。可以直接使用，也可以指定一个名字。</p>
@@ -374,9 +393,9 @@
 </li>
 <li><p>ng-dblclick=”fun” AngularJs自带的双击事件</p>
 </li>
-<li><p>ng-focus=”fun”   AngularJs自带的获取焦点事件</p>
+<li><p>ng-focus=”fun” AngularJs自带的获取焦点事件</p>
 </li>
-<li><p>ng-blur=”fun”  AngularJs自带的失去焦点事件</p>
+<li><p>ng-blur=”fun” AngularJs自带的失去焦点事件</p>
 </li>
 <li><p>ng-change=”fun” AngularJs自带的事件</p>
 </li>
@@ -392,21 +411,21 @@
 </li>
 <li><p>ng-disable=”boolean”  AngularJs设置未激活状态，不可提交数据</p>
 </li>
-<li><p>ng-hide=”boolean”  AngularJs设置隐藏状态，不改变dom结构</p>
+<li><p>ng-hide=”boolean”  AngularJs设置隐藏状态，不改变DOM结构</p>
 </li>
-<li><p>ng-show=”boolean” AngularJs设置显示状态，不改变dom结构</p>
+<li><p>ng-show=”boolean” AngularJs设置显示状态，不改变DOM结构</p>
 </li>
 <li><p>ng-if=”boolean”  AngularJs设置if判断流程，改变dom结构，true显示该dom，false隐藏该dom元素</p>
 </li>
 <li><p>ng-switch=”值”AngularJs设置分支判断流程，会改变dom结构</p>
 </li>
-<li><p>ng-switch-when=”判断值”显示对应值的dom</p>
+<li><p>ng-switch-when=”判断值”显示对应值的DOM</p>
 </li>
 <li><p>ng-switch-default默认的值</p>
 </li>
-<li><p>ng-repeat   AngularJs循环流程，可以循环数组和对象，并且会重新限定一个作用域，在该作用域下有一个对象（包含了各种信息）。</p>
+<li><p>ng-repeat AngularJs循环流程，可以循环数组和对象，并且会重新限定一个作用域，在该作用域下有一个对象（包含了各种信息）。</p>
 </li>
-<li><p>ng-view   实现路由的托管，根据路径的不同，将对应的页面渲染到网页，即ng-view所在的位置</p>
+<li><p>ng-view 实现路由的托管，根据路径的不同，将对应的页面渲染到网页，即ng-view所在的位置</p>
 </li>
 </ol>
 
@@ -424,14 +443,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
-          
-            <a href="/tags/Github-Pages/" rel="tag"># Github Pages</a>
-          
-        </div>
-      
 
       
       
@@ -441,8 +452,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/02/侧耳倾听/" rel="next" title="你有千言万语，我愿侧耳倾听">
-                <i class="fa fa-chevron-left"></i> 你有千言万语，我愿侧耳倾听
+              <a href="/2016/12/09/sublime-text3/" rel="next" title="前端神器 Sublime Text3 安装及使用">
+                <i class="fa fa-chevron-left"></i> 前端神器 Sublime Text3 安装及使用
               </a>
             
           </div>
@@ -451,8 +462,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/12/09/sublime-text3/" rel="prev" title="前端神器 Sublime Text3 安装及使用">
-                前端神器 Sublime Text3 安装及使用 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/08/14/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
