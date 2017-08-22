@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo,Github Pages," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="Hexo 是一个快速、简洁且高效的博客框架。– Hexo官网">
+<meta name="keywords" content="Hexo,Github Pages">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo+Github Pages 搭建个人博客">
+<meta property="og:url" content="https://winlily.github.io/2017/08/22/Hexo-Github-Pages-搭建个人博客/index.html">
+<meta property="og:site_name" content="winlily的小站">
+<meta property="og:description" content="Hexo 是一个快速、简洁且高效的博客框架。– Hexo官网">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://p1.bqimg.com/567571/c88fa7ba595486d1.png">
+<meta property="og:image" content="http://p1.bpimg.com/567571/b7ade1862d780cb1.png">
+<meta property="og:image" content="http://p1.bpimg.com/567571/a6fcebf2256f5f0c.png">
+<meta property="og:image" content="http://p1.bpimg.com/567571/2908b921387dd8ed.png">
+<meta property="og:image" content="http://p1.bpimg.com/567571/a5fc64d9f73a0130.png">
+<meta property="og:updated_time" content="2017-08-22T11:06:57.482Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo+Github Pages 搭建个人博客">
+<meta name="twitter:description" content="Hexo 是一个快速、简洁且高效的博客框架。– Hexo官网">
+<meta name="twitter:image" content="http://p1.bqimg.com/567571/c88fa7ba595486d1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://winlily.github.io/2017/08/22/Hexo-Github-Pages-搭建个人博客/"/>
+
+
+
+
+
+  <title>Hexo+Github Pages 搭建个人博客 | winlily的小站</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?5305ed6b25328977a9417927a212793b";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">winlily的小站</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://winlily.github.io/2017/08/22/Hexo-Github-Pages-搭建个人博客/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="winlily">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/winlily.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="winlily的小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Hexo+Github Pages 搭建个人博客</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-22T11:47:25+08:00">
+                2017-08-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>Hexo 是一个快速、简洁且高效的博客框架。– <strong><a href="https://hexo.io/zh-cn/" title="hexo" target="_blank" rel="external">Hexo官网</a></strong></p>
+<a id="more"></a>
+<p>学习Hexo之前，可以先了解一些常用的命令 <strong><a href="https://hexo.io/zh-tw/docs/commands.html" title="命令" target="_blank" rel="external">点击查看</a></strong></p>
+<h2 id="1-系统环境配置"><a href="#1-系统环境配置" class="headerlink" title="1.系统环境配置"></a>1.系统环境配置</h2><p>下载安装 Node.js 和 git</p>
+<p><strong><a href="https://git-for-windows.github.io/" target="_blank" rel="external">git</a></strong></p>
+<p><strong><a href="https://nodejs.org/en/" title="node.js" target="_blank" rel="external">node.js</a></strong></p>
+<p>git 教程个人推荐 <strong><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" title="git" target="_blank" rel="external">廖雪峰</a></strong> 的教程</p>
+<h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2.安装Hexo"></a>2.安装Hexo</h2><p>打开 git bash 面板，安装 Hexo：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install –g hexo-cli</div></pre></td></tr></table></figure></p>
+<p>Windows系统下安装完成后会显示一些 <strong>warning</strong> ，可以忽略不管。</p>
+<p>查看本地Hexo版本（最好安装3.0以上版本）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo version</div></pre></td></tr></table></figure></p>
+<p>如果显示出Hexo版本说明Hexo安装成功。</p>
+<h2 id="3-搭建本地博客"><a href="#3-搭建本地博客" class="headerlink" title="3.搭建本地博客"></a>3.搭建本地博客</h2><p>在本地新建一个文件夹 blog (文件命名随意)，在blog文件夹下右键打开 git bash 面板，输入以下命令自动安装相应的文件：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
+<p>等待安装完成后，blog文件夹下会生成如下图所示的文件：</p>
+<p><img src="http://p1.bqimg.com/567571/c88fa7ba595486d1.png" alt=""></p>
+<p>目录简介：</p>
+<p>–node_moduled  // hexo的模块管理，可自行忽略</p>
+<p>–scaffolds   // 模板文件夹，用户可以自定义模板</p>
+<p>–source      // 资源文件夹是存放用户资源的地方,用户的文章放在 _posts 文件夹下</p>
+<p>–themes      // 主题文件夹，用户可以根据自己的需求安装主题</p>
+<p>–_config.yml // hexo全局配置文件（用户可以根据自己的需求进行个性化配置）</p>
+<p>安装启动服务器插件：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-server --save</div></pre></td></tr></table></figure></p>
+<p>启动服务（也可以简写为：hexo s），默认端口为 4000：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure></p>
+<p>输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 查看效果</p>
+<p>ctrl+c 停止服务</p>
+<p>到此为止，本地博客已经搭建完成。</p>
+<h2 id="4-将本地博客部署到Github-Pages"><a href="#4-将本地博客部署到Github-Pages" class="headerlink" title="4.将本地博客部署到Github Pages"></a>4.将本地博客部署到Github Pages</h2><p>在使用之前需要先了解下什么是 <strong><a href="https://zh.wikipedia.org/wiki/GitHub" target="_blank" rel="external">Github</a></strong> 和 <strong><a href="https://pages.github.com/" target="_blank" rel="external">Github Pages</a></strong>。Github 被称为全球最大的社交编程及代码托管平台，上面有大量的开源代码，广为开发者喜爱。Github Pages 是Github 公司提供的免费的静态网站托管服务，并且用户可以绑定自己独立的域名。没有Github账号的用户需要去 <strong><a href="https://github.com/" target="_blank" rel="external">官网</a></strong>注册（这里不详细介绍）。</p>
+<p><strong>注意：</strong> 新用户需要在 settings 配置SSH keys(这里不详细介绍)。</p>
+<p>进入 github 主页，选择 new repository，进入到 <strong><a href="https://github.com/new" target="_blank" rel="external">新建仓库</a></strong> 的界面。新建一个 USERNAME.github.io 的仓库，这里 USERNAME 是 Github 的用户名，且只能是 Github 的用户名。Github Pages搭建博客已经完成，下面把本地的 Hexo 博客托管到Github上。</p>
+<p>打开blog文件夹下的 _config.yml 文件（建议用Nodepad++或者记事本打开），找到文件最下面的deploy:进行配置修改。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line"><span class="built_in">type</span>: git</div><div class="line">repository: git@github.com:winlily/winlily.github.io.git</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
+<p><strong>注意：</strong> yaml语法有非常严格的要求，“：” 后面一定要加上空格，并且缩进也要一致，最初配置时因为缩进没有一致出现了错误如下：</p>
+<p><img src="http://p1.bpimg.com/567571/b7ade1862d780cb1.png" alt=""></p>
+<p>下面修改相应的值，Hexo 3.0以后的版本type值需要填写git，repository 值需要打开进入到USERNAME.github.io 点击Clone or download 会出现如下的界面：</p>
+<p><img src="http://p1.bpimg.com/567571/a6fcebf2256f5f0c.png" alt=""></p>
+<p>如图所示右上角有一个切换按钮，Use HTTPS 点击后会切换到 HTTPS 链接如下：</p>
+<p><img src="http://p1.bpimg.com/567571/2908b921387dd8ed.png" alt=""></p>
+<p><strong>注意：</strong> windows系统我们一定要将repository 的值设置为SSH链接，如果设置为HTTPS链接，会出现如下错误（这也是我遇到的最大的一个坑 [心塞 -_- ]）：</p>
+<p><img src="http://p1.bpimg.com/567571/a5fc64d9f73a0130.png" alt=""></p>
+<p>到此配置已经完成，现在需要用命令部署到Github，部署到 Github 前需要在本地生成<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure></p>
+<p>部署到 Github<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>现在访问 <strong><a href="USERNAME.github.io">USERNAME.github.io</a></strong> 即可预览自己的博客。</p>
+<h2 id="5-Github-Pages-绑定自己独立的域名"><a href="#5-Github-Pages-绑定自己独立的域名" class="headerlink" title="5.Github Pages 绑定自己独立的域名"></a>5.Github Pages 绑定自己独立的域名</h2><p>当然，这一步的前提是要有个个人独立域名。作为一枚学生党的我首先还是考虑了下价格[haha] ,这一点<strong><a href="https://www.aliyun.com" target="_blank" rel="external">阿里云</a></strong>和 <strong><a href="https://www.qcloud.com/" target="_blank" rel="external">腾讯云</a></strong>针对学生党都有些优惠，相比之下我个人选择的是后者。</p>
+<p>有了域名，现在我们要把它用起来。</p>
+<ul>
+<li>首先，进入到域名管理界面，进行域名解析；</li>
+</ul>
+<ul>
+<li>其次，我们需要 ping 出 winlily.github.io的IP地址；</li>
+</ul>
+<ul>
+<li><p>再者，在域名管理界面添加两个记录：</p>
+<p>  1）记录类型A 主机记录为www 记录值为winlily.github.io的IP地址；</p>
+<p>  2）记录类型为CNAME 主机记录为@ 记录值为winlily.github.io</p>
+</li>
+</ul>
+<ul>
+<li>最后，在winlily.github.io项目根目录下建文件，文件名为CNAME(没有后缀)，内容写自己的域名地址（winlily.me）。</li>
+</ul>
+<p>现在输入自己的域名即可访问自己的博客，到此Hexo+Github Pages 搭建个人博客全部完成。</p>
+<p><strong>说明：</strong></p>
+<p>由于Github page 的空间大小只有300M（网上大家都这么说，也有说是1G， -_- ）,我选择将图片放在七牛云上，如果你想体验可以<strong><a href="https://portal.qiniu.com/signup?code=3leo0dg19rrrm" target="_blank" rel="external">点击这里</a></strong> 进行注册使用，关于如何使用七牛云做图床，下次再做介绍~</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/tags/Github-Pages/" rel="tag"># Github Pages</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/14/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/22/AngularJS/" rel="prev" title="Hexo+Github Pages 搭建个人博客">
+                Hexo+Github Pages 搭建个人博客 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/winlily.png"
+               alt="winlily" />
+          <p class="site-author-name" itemprop="name">winlily</p>
+           
+              <p class="site-description motion-element" itemprop="description">岁月是一场有去无回的旅行，好的坏的都是风景。</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-系统环境配置"><span class="nav-number">1.</span> <span class="nav-text">1.系统环境配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装Hexo"><span class="nav-number">2.</span> <span class="nav-text">2.安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-搭建本地博客"><span class="nav-number">3.</span> <span class="nav-text">3.搭建本地博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-将本地博客部署到Github-Pages"><span class="nav-number">4.</span> <span class="nav-text">4.将本地博客部署到Github Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-Github-Pages-绑定自己独立的域名"><span class="nav-number">5.</span> <span class="nav-text">5.Github Pages 绑定自己独立的域名</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 &mdash; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">winlily</span>
+
+  
+</div>
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
