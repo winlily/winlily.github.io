@@ -96,7 +96,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="随笔," />
+  <meta name="keywords" content="CSS," />
 
 
 
@@ -112,25 +112,18 @@
 
 
 
-<meta name="description" content="希望能够遇到一个可以和自己并肩奔跑的人，不必仰望也不会轻视，在共同奔跑的路上渐渐变成一个更好的自己。">
-<meta name="keywords" content="随笔">
+<meta name="description" content="CSS中有一种基础设计模式叫盒模型，盒模型定义了Web页面中的元素中如何来解析。所有HTML元素都是一个盒模型，包括html和body标签元素。CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。">
+<meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="你有千言万语，我愿侧耳倾听">
-<meta property="og:url" content="https://winlily.github.io/2016/12/02/侧耳倾听/index.html">
+<meta property="og:title" content="CSS盒模型">
+<meta property="og:url" content="https://winlily.github.io/2017/08/24/CSSBoxModel/index.html">
 <meta property="og:site_name" content="winlily的小站">
-<meta property="og:description" content="希望能够遇到一个可以和自己并肩奔跑的人，不必仰望也不会轻视，在共同奔跑的路上渐渐变成一个更好的自己。">
+<meta property="og:description" content="CSS中有一种基础设计模式叫盒模型，盒模型定义了Web页面中的元素中如何来解析。所有HTML元素都是一个盒模型，包括html和body标签元素。CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://ohjbpzaq0.bkt.clouddn.com/121203.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center">
-<meta property="og:image" content="http://ohjbpzaq0.bkt.clouddn.com/121204.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center">
-<meta property="og:image" content="http://ohjbpzaq0.bkt.clouddn.com/121201.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center">
-<meta property="og:image" content="http://ohjbpzaq0.bkt.clouddn.com/121202.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center">
-<meta property="og:image" content="http://ohjbpzaq0.bkt.clouddn.com/121205.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center">
-<meta property="og:image" content="http://ohjbpzaq0.bkt.clouddn.com/121206.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center">
-<meta property="og:updated_time" content="2016-12-28T08:43:29.188Z">
+<meta property="og:updated_time" content="2017-08-24T12:49:54.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="你有千言万语，我愿侧耳倾听">
-<meta name="twitter:description" content="希望能够遇到一个可以和自己并肩奔跑的人，不必仰望也不会轻视，在共同奔跑的路上渐渐变成一个更好的自己。">
-<meta name="twitter:image" content="http://ohjbpzaq0.bkt.clouddn.com/121203.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center">
+<meta name="twitter:title" content="CSS盒模型">
+<meta name="twitter:description" content="CSS中有一种基础设计模式叫盒模型，盒模型定义了Web页面中的元素中如何来解析。所有HTML元素都是一个盒模型，包括html和body标签元素。CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。">
 
 
 
@@ -159,13 +152,13 @@
 
 
 
-  <link rel="canonical" href="https://winlily.github.io/2016/12/02/侧耳倾听/"/>
+  <link rel="canonical" href="https://winlily.github.io/2017/08/24/CSSBoxModel/"/>
 
 
 
 
 
-  <title>你有千言万语，我愿侧耳倾听 | winlily的小站</title>
+  <title>CSS盒模型 | winlily的小站</title>
   
 
 
@@ -302,7 +295,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://winlily.github.io/2016/12/02/侧耳倾听/">
+    <link itemprop="mainEntityOfPage" href="https://winlily.github.io/2017/08/24/CSSBoxModel/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="winlily">
@@ -319,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">你有千言万语，我愿侧耳倾听</h1>
+          <h1 class="post-title" itemprop="name headline">CSS盒模型</h1>
         
 
         <div class="post-meta">
@@ -331,8 +324,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-02T18:02:59+08:00">
-                2016-12-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-24T20:11:35+08:00">
+                2017-08-24
               </time>
             
 
@@ -341,6 +334,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Web前端/" itemprop="url" rel="index">
+                    <span itemprop="name">Web前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -369,20 +384,30 @@
       
 
       
-        <p>希望能够遇到一个可以和自己并肩奔跑的人，不必仰望也不会轻视，在共同奔跑的路上渐渐变成一个更好的自己。</p>
+        <p>CSS中有一种基础设计模式叫盒模型，盒模型定义了Web页面中的元素中如何来解析。所有HTML元素都是一个盒模型，包括html和body标签元素。CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。</p>
 <a id="more"></a>
-<p>《侧耳倾听》一直是吉卜力工作室电影中最爱的一部，这一点一直没有变过。关于这一点，很多朋友都很疑惑，因为相较于《千与千寻》、《龙猫》、《风之谷》、《幽灵公主》亦或是《天空之城》，发表于1995年的《侧耳倾听》总会被大多数吉卜力迷所忽略。</p>
-<p>简单的情节，简单的人物，简单的音乐，简单的画面…… ，就是这样一部简单的电影，让我作为经典收藏。 她如此娓娓到来，如在耳边细语，我们曾经的清涩； 细腻的感动， 无论那回忆的结局是完满还是遗憾，都成故事，珍藏在记忆的相册。</p>
-<p><img src="http://ohjbpzaq0.bkt.clouddn.com/121203.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center" alt=""></p>
-<p>我们都曾经小心翼翼的喜欢过一个人，年少时的我们不会轻易把喜欢说出口，而是把它埋在心里，写进日记本里。也许是因为我们觉得自己喜欢的那个人太过优秀，TA总是自带光环，不仅有着好看的侧脸，还有傲人的成绩。</p>
-<p><img src="http://ohjbpzaq0.bkt.clouddn.com/121204.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center" alt=""></p>
-<p>如若是有缘之人，即使在岔路口不小心失散，也会有一枚红叶指点你去将对方寻找。他们缘分的继续是一只会坐电车的胖喵，它好像很孤独，静静地望着车窗外，看着人来人往，它不知道，哪一个路口会是它的归宿。可是它却为她找到了最好的归宿。</p>
-<p><img src="http://ohjbpzaq0.bkt.clouddn.com/121201.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center" alt=""></p>
-<p>那天她又在那里碰见了他，他开门让她进去继续欣赏那个猫玩偶男爵，而自己则在楼下聚精会神地制作小提琴，那时的她才发现他是那么的优秀，不仅喜欢看书并且有一个去意大利学做小提琴，成为一个小提琴工匠的梦想。﻿</p>
-<p><img src="http://ohjbpzaq0.bkt.clouddn.com/121202.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center" alt=""></p>
-<p>“因为你，我愿意成为一个更好的人，不想成为你的包袱，因此发奋努力，只是为了想要证明我足以与你相配。” —— 侧耳倾听</p>
-<p><img src="http://ohjbpzaq0.bkt.clouddn.com/121205.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center" alt=""></p>
-<p><img src="http://ohjbpzaq0.bkt.clouddn.com/121206.png?imageView2/2/w/400/h/400/interlace/0/q/100|watermark/2/text/d2lubGlseS5tZQ==/font/5a6L5L2T/fontsize/500/fill/I0VGRUZFRg==/dissolve/100/gravity/Center" alt="">﻿</p>
+<h1 id="CSS盒模型分类"><a href="#CSS盒模型分类" class="headerlink" title="CSS盒模型分类"></a>CSS盒模型分类</h1><p>CSS盒模型被分为两种，第一种是w3c的标准模型，另一种是IE的传统模型，它们相同之处都是对元素计算尺寸的模型，不同之处是两者的计算方法不一致：</p>
+<h2 id="W3C标准盒模型"><a href="#W3C标准盒模型" class="headerlink" title="W3C标准盒模型"></a>W3C标准盒模型</h2><p>外盒尺寸计算（元素空间尺寸）</p>
+<p>element空间高度＝内容高度＋内距＋边框＋外距（height为内容高度）</p>
+<p>element空间宽度＝内容宽度＋内距＋边框＋外距（width为内容宽度）</p>
+<p>内盒尺寸计算（元素大小）</p>
+<p>element高度＝内容高度＋内距＋边框（height为内容高度）</p>
+<p>element宽度＝内容宽度＋内距＋边框（width为内容宽度）</p>
+<h2 id="IE传统下盒模型（IE6-）"><a href="#IE传统下盒模型（IE6-）" class="headerlink" title="IE传统下盒模型（IE6-）"></a>IE传统下盒模型（IE6-）</h2><p>外盒尺寸计算（元素空间尺寸）</p>
+<p>element空间高度＝内容高度＋外距（height包含了元素内容宽度、边框、内距）</p>
+<p>element宽间宽度＝内容宽度＋外距（width包含了元素内容宽度、边框、内距）</p>
+<p>内盒尺寸计算（元素大小）</p>
+<p>element高度＝内容高度（height包含了元素内容宽度、边框、内距）</p>
+<p>element宽度＝内容宽度（width包含了元素内容宽度、边框、内距）</p>
+<h1 id="box-sizing属性"><a href="#box-sizing属性" class="headerlink" title="box-sizing属性"></a>box-sizing属性</h1><p>在CSS3中新增加了<code>box-sizing</code>属性，能够事先定义盒模型的尺寸解析方式，其语法规则如下：</p>
+<pre><code class="CSS">box-sizing: content-box | border-box | inherit
+</code></pre>
+<p>属性值说明：</p>
+<pre><code class="CSS">box-sizing: content-box // 让元素维持W3C的标准盒模型
+box-sizing: border-box // 让元素维持IE传统的盒模型
+box-sizing: inherit // 让元素继承父元素的盒模型模式
+</code></pre>
+<p>在自适应布局当中，在元素基础上添加内距padding，按照标准盒模型解析，往往会将布局撑破，但使用box-sizing的border-box值，便不会出现问题。（PS：<a href="http://v3.bootcss.com/" title="Bootstrap" target="_blank" rel="external"><code>Bootstrap</code> </a>框架中默认设置元素<code>box-sizing: border-box</code>即为了更好的实现自适应效果）</p>
 
       
     </div>
@@ -400,7 +425,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/随笔/" rel="tag"># 随笔</a>
+            <a href="/tags/CSS/" rel="tag"># CSS</a>
           
         </div>
       
@@ -413,8 +438,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/11/30/写在十一月的最后一天/" rel="next" title="写在十一月的最后一天">
-                <i class="fa fa-chevron-left"></i> 写在十一月的最后一天
+              <a href="/2017/06/02/AngularJS/" rel="next" title="AngularJS 初识">
+                <i class="fa fa-chevron-left"></i> AngularJS 初识
               </a>
             
           </div>
@@ -422,10 +447,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/04/Hexo-Github-Pages-搭建个人博客/" rel="prev" title="Hexo+Github Pages 搭建个人博客">
-                Hexo+Github Pages 搭建个人博客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -477,8 +498,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/winlily.png"
@@ -493,7 +523,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -504,7 +534,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -515,7 +545,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -540,6 +570,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS盒模型分类"><span class="nav-number">1.</span> <span class="nav-text">CSS盒模型分类</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#W3C标准盒模型"><span class="nav-number">1.1.</span> <span class="nav-text">W3C标准盒模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#IE传统下盒模型（IE6-）"><span class="nav-number">1.2.</span> <span class="nav-text">IE传统下盒模型（IE6-）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#box-sizing属性"><span class="nav-number">2.</span> <span class="nav-text">box-sizing属性</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
