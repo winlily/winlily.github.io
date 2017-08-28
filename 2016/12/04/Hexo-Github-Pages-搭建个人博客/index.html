@@ -116,7 +116,7 @@
 <meta name="keywords" content="Hexo,Github Pages">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+Github Pages 搭建个人博客">
-<meta property="og:url" content="https://winlily.github.io/blog/2016/12/04/Hexo-Github-Pages-搭建个人博客/index.html">
+<meta property="og:url" content="https://github.com/winlily/blog/2016/12/04/Hexo-Github-Pages-搭建个人博客/index.html">
 <meta property="og:site_name" content="winlily的小站">
 <meta property="og:description" content="Hexo 是一个快速、简洁且高效的博客框架。– Hexo官网">
 <meta property="og:locale" content="zh-Hans">
@@ -158,7 +158,7 @@
 
 
 
-  <link rel="canonical" href="https://winlily.github.io/blog/2016/12/04/Hexo-Github-Pages-搭建个人博客/"/>
+  <link rel="canonical" href="https://github.com/winlily/blog/2016/12/04/Hexo-Github-Pages-搭建个人博客/"/>
 
 
 
@@ -311,7 +311,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://winlily.github.io/blog/blog/2016/12/04/Hexo-Github-Pages-搭建个人博客/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/winlily/blog/blog/2016/12/04/Hexo-Github-Pages-搭建个人博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="winlily">
@@ -425,9 +425,9 @@
 <p>输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 查看效果</p>
 <p>ctrl+c 停止服务</p>
 <p>到此为止，本地博客已经搭建完成。</p>
-<h2 id="将本地博客部署到Github-Pages"><a href="#将本地博客部署到Github-Pages" class="headerlink" title="将本地博客部署到Github Pages"></a>将本地博客部署到Github Pages</h2><p>在使用之前需要先了解下什么是 <strong><a href="https://zh.wikipedia.org/wiki/GitHub" target="_blank" rel="external">Github</a></strong> 和 <strong><a href="https://pages.github.com/" target="_blank" rel="external">Github Pages</a></strong>。Github 被称为全球最大的社交编程及代码托管平台，上面有大量的开源代码，广为开发者喜爱。Github Pages 是Github 公司提供的免费的静态网站托管服务，并且用户可以绑定自己独立的域名。没有Github账号的用户需要去 <strong><a href="https://github.com/" target="_blank" rel="external">官网</a></strong>注册（这里不详细介绍）。</p>
+<h2 id="将本地博客部署到Github-Pages"><a href="#将本地博客部署到Github-Pages" class="headerlink" title="将本地博客部署到Github Pages"></a>将本地博客部署到Github Pages</h2><p>在使用之前需要先了解下什么是 <strong><a href="https://zh.wikipedia.org/wiki/GitHub" target="_blank" rel="external">Github</a></strong> 和 <strong><a href="https://pages.github.com/" target="_blank" rel="external">Github Pages</a></strong>。Github 被称为全球最大的社交编程及代码托管平台，上面有大量的开源代码，广为开发者喜爱。Github Pages 是Github 公司提供的免费的静态网站托管服务，并且用户可以绑定自己独立的域名。没有Github账号的用户需要去 <strong><a href="https://github.com/">官网</a></strong>注册（这里不详细介绍）。</p>
 <p><strong>注意：</strong> 新用户需要在 settings 配置SSH keys(这里不详细介绍)。</p>
-<p>进入 github 主页，选择 new repository，进入到 <strong><a href="https://github.com/new" target="_blank" rel="external">新建仓库</a></strong> 的界面。新建一个 USERNAME.github.io 的仓库，这里 USERNAME 是 Github 的用户名，且只能是 Github 的用户名。Github Pages搭建博客已经完成，下面把本地的 Hexo 博客托管到Github上。</p>
+<p>进入 github 主页，选择 new repository，进入到 <strong><a href="https://github.com/new">新建仓库</a></strong> 的界面。新建一个 USERNAME.github.io 的仓库，这里 USERNAME 是 Github 的用户名，且只能是 Github 的用户名。Github Pages搭建博客已经完成，下面把本地的 Hexo 博客托管到Github上。</p>
 <p>打开blog文件夹下的 _config.yml 文件（建议用Nodepad++或者记事本打开），找到文件最下面的deploy:进行配置修改。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line"><span class="built_in">type</span>: git</div><div class="line">repository: git@github.com:winlily/winlily.github.io.git</div><div class="line">branch: master</div></pre></td></tr></table></figure></p>
 <p><strong>注意：</strong> yaml语法有非常严格的要求，“：” 后面一定要加上空格，并且缩进也要一致，最初配置时因为缩进没有一致出现了错误如下：</p>
 <p><img src="http://p1.bpimg.com/567571/b7ade1862d780cb1.png" alt=""></p>
