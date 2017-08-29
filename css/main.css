@@ -1809,7 +1809,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #544fff;
+  background: #dab8ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2958,40 +2958,10 @@ pre .javascript .function {
     text-align: justify;
   }
 }
-@charset "UTF-8";
-.container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.resume {
+  width: 100%;
 }
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 12px;
-  }
-}
-header {
+.resume-header {
   border-bottom: 10px solid #ccc;
 }
 .flex {
@@ -3009,4 +2979,5 @@ header {
 /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
 /*align-content:space-between;*/
   justify-content: space-around;
+  align-items: center;
 }
