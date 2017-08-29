@@ -1809,7 +1809,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0494c3;
+  background: #13fbe0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2962,7 +2962,7 @@ pre .javascript .function {
   width: 100%;
 }
 .resume-header {
-  border-bottom: 10px solid #ccc;
+  border-bottom: 10px solid #7890a8;
 }
 .flex {
   display: -webkit-box;
